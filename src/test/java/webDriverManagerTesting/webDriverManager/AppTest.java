@@ -10,14 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest {
     public static void main( String[] args ) {
-        WebDriver driver = loadDriver(browserDriver.opera);
+        WebDriver driver = loadDriver(browserDriver.chrome);
         driver.get("https://www.google.com.cu");
         Faker faker = new Faker();
         WebElement element = driver.findElement(By.xpath("//input[@name='q']"));
